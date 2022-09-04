@@ -1,0 +1,33 @@
+.connect {
+  padding: 20px;
+  border-radius: 5px;
+  margin: 20px 0;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+
+  h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+  }
+
+  p {
+    font-size: 1.3rem;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+  }
+
+  .connect__button {
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    width: 80%;
+    font-size: 1.3rem;
+
+    color: black;
+  }
+}

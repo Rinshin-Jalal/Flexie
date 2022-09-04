@@ -1,0 +1,73 @@
+.register {
+  color: #fff;
+  background: rgb(30, 30, 30);
+  max-width: 700px;
+  // margin: 0 auto;
+  padding: 40px;
+  margin: 5% auto;
+  border-radius: 10px;
+
+  a {
+    color: rgb(182, 182, 182);
+    margin-top: 20px;
+    font-size: 1.1rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+  }
+
+  label {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  input {
+    outline: none;
+    width: 100%;
+
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #000;
+    border-radius: 5px;
+    font-size: 1.2rem;
+  }
+
+  p.error {
+    color: rgb(250, 132, 132);
+    font-size: 1rem;
+  }
+
+  button {
+    width: 70%;
+    padding: 20px 10px;
+    margin: auto;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  button:hover {
+    -webkit-box-shadow: 22px 22px 0px -15px rgba(255, 255, 255, 1);
+    -moz-box-shadow: 22px 22px 0px -15px rgba(255, 255, 255, 1);
+    box-shadow: 22px 22px 0px -15px rgba(255, 255, 255, 1);
+  }
+
+  .question1 {
+    margin-top: 20px;
+  }
+}

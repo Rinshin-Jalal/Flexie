@@ -1,0 +1,59 @@
+.chat {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid lightgray;
+  }
+
+  .messages {
+    flex: 1;
+    overflow-y: scroll;
+    padding: 20px;
+
+    div {
+      margin: 0;
+      font-size: 1.3rem;
+      font-weight: bold;
+      padding: 0.5rem 0;
+
+      p {
+        margin: 0;
+        font-size: 0.8rem;
+        font-weight: normal;
+      }
+    }
+
+    .you {
+      text-align: right;
+      p {
+        margin: 0;
+        font-size: 01rem;
+        font-weight: normal;
+      }
+    }
+  }
+
+  input {
+    padding: 10px;
+    border: none;
+    width: 100%;
+    border-top: 1px solid lightgray;
+    font-size: 1.3rem;
+  }
+
+  button {
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    font-size: 1.3rem;
+    color: black;
+  }
+}

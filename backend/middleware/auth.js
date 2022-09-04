@@ -1,6 +1,6 @@
 import jwt from "jsonwebtoken";
 import asyncHandler from "express-async-handler";
-import userModel from "../models/userModel.js";
+import userModel from "../models/user.js";
 import dotenv from "dotenv";
 dotenv.config();
 
@@ -22,14 +22,11 @@ const protect = asyncHandler(async (req, res, next) => {
 
       next();
     } catch (error) {
-      console.log(error);
-      res.status(401);
-      throw new Error("Not authorized");
+      res.status(401).json({ msg: "Not authorized" });
     }
   }
   if (!token) {
-    res.status(401);
-    throw new Error("Not authorized, no token provided");
+    res.status(401).json({ msg: "Not authorized, no token provided" });
   }
 });
 
